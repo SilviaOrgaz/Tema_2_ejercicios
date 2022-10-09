@@ -31,8 +31,8 @@ def modificar(lista, x):
             x.remove(i)
     print(f"Eliminar los números impares: {x}")
     print("Realizar la suma de los elementos que quedan: ", sum(x))
-    suma=sum(x)
-    x.append(suma)
+    x.append(sum(x))
+    x= x[-1:]+ x[:-1]
     print(f"Añadir como primer elemento de la lista la suma realizada: {x}")
     return x
 

@@ -5,7 +5,7 @@
 # Eliminar todos los números impares. 
 # Realizar una suma de todos los números que quedan. 
 # Añadir como primer elemento de la lista la suma realizada.
-#  Devolver la lista modificada.
+# Devolver la lista modificada.
 # Finalmente, después de ejecutar la función, comprueba que la suma de todos los números a partir del segundo, 
 # concuerda con el primer número de la lista, 
 # tal que así: nueva_lista = modificar(lista)
@@ -17,9 +17,6 @@
 #La función sum(lista) devuelve una suma de los elementos de una lista.
 
 Lista = [10, 2, 2, 4, 7, 1, 4]
-print(sum(Lista))
-#eliminar_dobles=set(Lista)
-#print(eliminar_dobles)
 
 x =[]
 def modificar(lista, x):
@@ -34,7 +31,9 @@ def modificar(lista, x):
             x.remove(i)
     print(f"Eliminar los números impares: {x}")
     print("Realizar la suma de los elementos que quedan: ", sum(x))
+    #x.extend(sum(x))
+
     return x
 
 solucion = modificar(Lista, x)
-
+print(solucion)

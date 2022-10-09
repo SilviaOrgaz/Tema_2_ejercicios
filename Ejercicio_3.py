@@ -23,10 +23,13 @@ def modificar(lista, x):
         if i not in x:
             x.append(i)
             x.sort()
+    print(f"Borrar elementos duplicados y ordenar la lista de menor a mayor: {x}")
     for i in x:
         if i%2 != 0:
-            del x[i]
-    return print(x)
+            x.remove(i)
+            sum(x)
+    print(f"Eliminar los números impares y realizar la suma de los elementos que quedan: {x}")
+    return x
 
 solucion = modificar(Lista, x)
 

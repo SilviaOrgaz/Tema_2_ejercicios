@@ -23,6 +23,9 @@ def modificar(lista, x):
         if i not in x:
             x.append(i)
             x.sort()
+    for i in x:
+        if i%2 != 0:
+            del x[i]
     return print(x)
 
 solucion = modificar(Lista, x)

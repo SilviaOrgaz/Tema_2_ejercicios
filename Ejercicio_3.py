@@ -17,6 +17,7 @@
 #La función sum(lista) devuelve una suma de los elementos de una lista.
 
 Lista = [10, 2, 2, 4, 7, 1, 4]
+print(sum(Lista))
 #eliminar_dobles=set(Lista)
 #print(eliminar_dobles)
 
@@ -32,8 +33,7 @@ def modificar(lista, x):
         if i%2 != 0:
             x.remove(i)
     print(f"Eliminar los números impares: {x}")
-    sum(x)
-    print(f"Realizar la suma de los elementos que quedan: {x}")
+    print("Realizar la suma de los elementos que quedan: ", sum(x))
     return x
 
 solucion = modificar(Lista, x)

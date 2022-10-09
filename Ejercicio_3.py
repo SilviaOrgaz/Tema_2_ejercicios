@@ -37,4 +37,4 @@ def modificar(lista, x):
     return x
 
 solucion = modificar(Lista, x)
-
+print(solucion[0] == sum(solucion[1:]))

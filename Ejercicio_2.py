@@ -20,13 +20,19 @@ def modificar_cadena(cadena):
 
 modificar= modificar_cadena(cadena)
 
-modificar[0] += ".."
+#Para añadir caracteres a un string utilizo el +
 for i in range(len(modificar)):
-    modificar[i] += "."
-    modificar[i]= modificar[i][0].upper() + modificar[i][1:]
-    
+    modificar[i]=modificar[i][0].upper() + modificar[i][1:]
+    if i < 1:
+        modificar[i] += "..."
+    else:
+        modificar[i] += "."
+        #Estoy modificando y actualizando al mismo tiempo.
+        modificar[i]= "-" + " " + modificar[i]
+    print(modificar[i])
+
 #Imprime los elementos de la lista
-for i in modificar:
-    print(i)
+#for i in modificar:
+    #print(i)
 
 

@@ -12,12 +12,13 @@
 #Ni las banderolas ni el viento, lo que se mueve son vuestras mentes -dijo el maestro.
 #Lo único prohibido es modificar directamente el texto.
 
-lista = ["un día que el viento soplaba con fuerza#mira como se mueve aquella banderola -dijo un monje#lo que se mueve es el viento -respondió otro monje#ni las banderolas ni el viento, lo que se mueve son vuestras mentes -dijo el maestro"]
-def modificar_lista(lista, separador):
+cadena = "un día que el viento soplaba con fuerza#mira como se mueve aquella banderola -dijo un monje#lo que se mueve es el viento -respondió otro monje#ni las banderolas ni el viento, lo que se mueve son vuestras mentes -dijo el maestro"
+def modificar_cadena(cadena, separador):
     i = 0
-    while lista[i] == separador:
-        lista.remove(i)
-        lista.split()
+    while cadena[i] == separador:
+        cadena.remove(i)
+        cadena.split()
         i+=1
-    return i
+    return print(cadena)
 
+modificar= modificar_cadena(cadena, "#")

@@ -20,5 +20,8 @@ def modificar_cadena(cadena):
 
 modificar= modificar_cadena(cadena)
 
-for i in range(len(modificar)):
-    print(modificar[i])
+#for i in range(len(modificar)):
+    #print(modificar[i])
+
+for i in modificar:
+    print(i)

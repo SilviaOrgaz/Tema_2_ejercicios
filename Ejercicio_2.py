@@ -16,8 +16,9 @@ cadena = "un día que el viento soplaba con fuerza#mira como se mueve aquella ba
 
 #Esta función convierte una cadena en una lista de elementos que en la cadena principal están separados por una almuadilla
 def modificar_cadena(cadena):
-    #cadena = cadena.replace('#', '  ')
-    cadena= cadena.split("#")
-    return cadena
+    return cadena.split("#")
+
 modificar= modificar_cadena(cadena)
-#print(modificar)
+
+for i in range(len(modificar)):
+    print(modificar[i])

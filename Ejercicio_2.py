@@ -23,13 +23,9 @@ def modificar_cadena(cadena):
 
 modificar= modificar_cadena(cadena)
 
-#for i in range(len(modificar)):
-    #print(modificar[i])
-#Añade los puntos al final
-modificar[0]=modificar[0] + ".."
-
+modificar[0] += ".."
 for i in range(len(modificar)):
-    modificar[i]=modificar[i] + "."
+    modificar[i] += "."
     
 #Imprime los elementos de la lista
 for i in modificar:

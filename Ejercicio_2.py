@@ -13,9 +13,11 @@
 #Lo único prohibido es modificar directamente el texto.
 
 cadena = "un día que el viento soplaba con fuerza#mira como se mueve aquella banderola -dijo un monje#lo que se mueve es el viento -respondió otro monje#ni las banderolas ni el viento, lo que se mueve son vuestras mentes -dijo el maestro"
+
+#Esta función convierte una cadena en una lista de elementos que en la cadena principal están separados por una almuadilla
 def modificar_cadena(cadena):
     #cadena = cadena.replace('#', '  ')
     cadena= cadena.split("#")
     return cadena
 modificar= modificar_cadena(cadena)
-print(modificar)
+#print(modificar)

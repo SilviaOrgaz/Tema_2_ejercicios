@@ -8,6 +8,14 @@
 # teniendo en cuenta que si X == 0 e Y != 0 se sitúa sobre el eje Y, si X != 0 e Y == 0 se sitúa sobre el eje X y si X == 0 e Y == 0 está sobre el origen.
 #Añade un método llamado vector, que tome otro punto y calcule el vector resultante entre los dos puntos.
 
+class Punto:
+
+    def __init__(self, x, y):
+        self.x=x
+        self.y=y
+        print("Coordenadas creadas con éxito")
+
+    
 
 
 

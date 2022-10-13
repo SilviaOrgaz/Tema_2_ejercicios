@@ -21,12 +21,18 @@ class Punto:
     def cuadrante(self):
         if self.x == 0 and self.y != 0:
             print("El punto se encuentra sobre el eje Y")
+        elif self.x > 0 and self.y > 0:
+            print("El punto se encuentra en el cuadrante 1")
+        
         elif self.x == 0 and self.y == 0:
             print("El punto se ecnceuntra sobre el origen")
         else:
             print("El punto se encuentra sobre el eje X")
 
-    def vector(self):
+    def vector(self, vector1, vector2):
+        Punto1= vector1.self.x - vector2.self.x
+        Punto2= vector1.self.y - vector2.self.y
+        print("El vetor es ({},{})".format(Punto1, Punto2))
 
 
 #experimentación
@@ -46,3 +52,4 @@ A.cuadrante()
 C.cuadrante()
 D.cuadrante()
 
+vector1 = Punto(A,B)

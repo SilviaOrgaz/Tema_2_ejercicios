@@ -13,16 +13,16 @@ class Punto:
     def __init__(self, x, y):
         self.x=x
         self.y=y
-        print("Coordenadas creadas con éxito")
+        #print("Coordenadas creadas con éxito")
 
     def __str__(self):
         return "({},{})".format(self.x, self.y)
 
     def cuadrante(self):
         if self.x == 0 and self.y != 0:
-            print("El punto se encuentra sobre el eje Y")
+            print("{} se encuentra sobre el eje Y".format(self))
         elif self.x > 0 and self.y > 0:
-            print("El punto se encuentra en el primer cuadrante ")
+            print("{} se encuentra en el primer cuadrante".format(self))
         elif self.x < 0 and self.y > 0:
             print("El punto se encuentra en el segundo cuadrante")
         elif self.y < 0 and self.x <0:
@@ -34,9 +34,9 @@ class Punto:
         else:
             print("El punto se encuentra sobre el eje X")
 
-    def vector(self, vector1, vector2):
-        Punto1= vector1.self.x - vector2.self.x
-        Punto2= vector1.self.y - vector2.self.y
+    def vector(self):
+        Punto1= self.x - self.x
+        Punto2= self.y - self.y
         print("El vetor es ({},{})".format(Punto1, Punto2))
 
 
@@ -45,6 +45,7 @@ A=Punto(2, 3)
 B=Punto(5, 5) 
 C=Punto(-3, -1)
 D=Punto(0, 0)
+vector1 = Punto(A,B)
 
 print("/n Mostrando información: ")
 print(A)
@@ -56,5 +57,4 @@ print(D)
 A.cuadrante()
 C.cuadrante()
 D.cuadrante()
-
-vector1 = Punto(A,B)
+vector1.vector()

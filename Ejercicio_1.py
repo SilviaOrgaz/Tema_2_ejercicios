@@ -49,6 +49,8 @@ class Rectangulo:
         self.pi = pi
         self.pf = pf
         
+    def base(self):
+        print("La base del rectángulo es: ".format(abs(self.pf.x - self.pi.x)))
 
 
 #experimentación
@@ -68,7 +70,9 @@ print(D)
 A.cuadrante()
 C.cuadrante()
 D.cuadrante()
+
 A.vector(B)
 B.vector(A)
+
 A.distancia(B)
 B.distancia(A)

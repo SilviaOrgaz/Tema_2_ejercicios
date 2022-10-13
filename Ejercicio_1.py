@@ -24,15 +24,15 @@ class Punto:
         elif self.x > 0 and self.y > 0:
             print("{} se encuentra en el primer cuadrante".format(self))
         elif self.x < 0 and self.y > 0:
-            print("El punto se encuentra en el segundo cuadrante")
+            print("{} se encuentra en el segundo cuadrante".format(self))
         elif self.y < 0 and self.x <0:
-            print("El punto se encuentra en el tercer cuadrante")
+            print("{} se encuentra en el tercer cuadrante".format(self))
         elif self.y <0 and self.x >0:
-            print("El punto se encuentra en el cuarto cuadrante")
+            print("{} se encuentra en el cuarto cuadrante".format(self))
         elif self.x == 0 and self.y == 0:
-            print("El punto se ecnceuntra sobre el origen")
+            print("{} se ecnceuntra sobre el origen".format(self))
         else:
-            print("El punto se encuentra sobre el eje X")
+            print("{} se encuentra sobre el eje X".format(self))
 
     def vector(self):
         Punto1= self.x - self.x

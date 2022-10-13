@@ -83,6 +83,9 @@ B.vector(A)
 
 A.distancia(B)
 B.distancia(A)
+A.distancia(D)
+A.distancia(D)
+A.distancia(D)
 
 E=Rectangulo(A,B)
 E.base()

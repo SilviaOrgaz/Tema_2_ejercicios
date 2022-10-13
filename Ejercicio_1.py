@@ -34,10 +34,8 @@ class Punto:
         else:
             print("{} se encuentra sobre el eje X".format(self))
 
-    def vector(self):
-        Punto1= self.x - self.x
-        Punto2= self.y - self.y
-        print("El vetor es ({},{})".format(Punto1, Punto2))
+    def vector(self,vector):
+        print("El vector es ({},{})".format(vector.x - self.x, vector.y - self.y))
 
 
 #experimentación
@@ -45,7 +43,7 @@ A=Punto(2, 3)
 B=Punto(5, 5) 
 C=Punto(-3, -1)
 D=Punto(0, 0)
-vector1 = Punto(A,B)
+
 
 print("/n Mostrando información: ")
 print(A)
@@ -57,4 +55,5 @@ print(D)
 A.cuadrante()
 C.cuadrante()
 D.cuadrante()
-vector1.vector()
+A.vector(B)
+B.vector(A)

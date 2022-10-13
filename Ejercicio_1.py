@@ -8,6 +8,8 @@
 # teniendo en cuenta que si X == 0 e Y != 0 se sitúa sobre el eje Y, si X != 0 e Y == 0 se sitúa sobre el eje X y si X == 0 e Y == 0 está sobre el origen.
 #Añade un método llamado vector, que tome otro punto y calcule el vector resultante entre los dos puntos.
 
+import math
+
 class Punto:
 
     def __init__(self, x, y):
@@ -37,6 +39,17 @@ class Punto:
     def vector(self,punto):
         print("El vector resultante entre {} y {} es ({},{})".format(self, punto, punto.x - self.x, punto.y - self.y))
 
+    def distancia(self, punto):
+        distancia = math.sqrt((punto.x - self.x)**2+(punto.y - self.y)**2)
+        print("La distancia resultante entre {} y {} es: {}".format(self, punto, distancia))
+
+class Rectangulo:
+
+    def __init__(self, pi, pf):
+        self.pi = pi
+        self.pf = pf
+        
+
 
 #experimentación
 A=Punto(2, 3)
@@ -57,3 +70,5 @@ C.cuadrante()
 D.cuadrante()
 A.vector(B)
 B.vector(A)
+A.distancia(B)
+B.distancia(A)

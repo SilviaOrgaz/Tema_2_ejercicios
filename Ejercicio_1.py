@@ -22,8 +22,13 @@ class Punto:
         if self.x == 0 and self.y != 0:
             print("El punto se encuentra sobre el eje Y")
         elif self.x > 0 and self.y > 0:
-            print("El punto se encuentra en el cuadrante 1")
-        
+            print("El punto se encuentra en el primer cuadrante ")
+        elif self.x < 0 and self.y > 0:
+            print("El punto se encuentra en el segundo cuadrante")
+        elif self.y < 0 and self.x <0:
+            print("El punto se encuentra en el tercer cuadrante")
+        elif self.y <0 and self.x >0:
+            print("El punto se encuentra en el cuarto cuadrante")
         elif self.x == 0 and self.y == 0:
             print("El punto se ecnceuntra sobre el origen")
         else:

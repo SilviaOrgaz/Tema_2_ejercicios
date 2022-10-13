@@ -50,8 +50,11 @@ class Rectangulo:
         self.pf = pf
         
     def base(self):
-        print("La base del rectángulo es: ".format(abs(self.pf.x - self.pi.x)))
+        print("La base del rectángulo entre {}  y {} es {}: ".format(self.pi, self.pf, abs(self.pf.x - self.pi.x)))
 
+    def altura(self):
+        print("La altura del rectángulo entre {} y {} es {}". format(self.pi, self.pf, abs(self.pf.y - self.pi.y)))
+        
 
 #experimentación
 A=Punto(2, 3)

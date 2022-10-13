@@ -34,8 +34,8 @@ class Punto:
         else:
             print("{} se encuentra sobre el eje X".format(self))
 
-    def vector(self,vector):
-        print("El vector es ({},{})".format(vector.x - self.x, vector.y - self.y))
+    def vector(self,punto):
+        print("El vector resultante entre {} y {} es ({},{})".format(self, punto, punto.x - self.x, punto.y - self.y))
 
 
 #experimentación

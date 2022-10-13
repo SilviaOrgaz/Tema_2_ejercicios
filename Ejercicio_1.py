@@ -26,5 +26,12 @@ class Punto:
         else:
             return 0
 
+    #def vector(self):
 
+
+#experimentación
+A=Punto(2, 3)
+B=Punto(5,5) 
+C=Punto(-3, -1)
+D=Punto(0,0)
 

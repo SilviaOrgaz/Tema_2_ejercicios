@@ -20,11 +20,11 @@ class Punto:
 
     def cuadrante(self):
         if self.x == 0 and self.y != 0:
-            return self.y
+            return "El punto se encuentra sobre el eje {}".format(self.y)
         elif self.x != 0 and self.y == 0:
-            return self.x
+            return "El punto se ecnceuntra sobre el cuadrante {}".format(self.x)
         else:
-            return 0
+            return "El punto se encuentra sobre el origen"
 
     #def vector(self):
 
@@ -34,4 +34,10 @@ A=Punto(2, 3)
 B=Punto(5,5) 
 C=Punto(-3, -1)
 D=Punto(0,0)
+
+print("/n Mostrando información: ")
+print(A)
+print(B)
+print(C)
+print(D)
 

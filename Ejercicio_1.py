@@ -8,6 +8,7 @@
 # teniendo en cuenta que si X == 0 e Y != 0 se sitúa sobre el eje Y, si X != 0 e Y == 0 se sitúa sobre el eje X y si X == 0 e Y == 0 está sobre el origen.
 #Añade un método llamado vector, que tome otro punto y calcule el vector resultante entre los dos puntos.
 
+from email.mime import base
 import math
 
 class Punto:
@@ -54,13 +55,16 @@ class Rectangulo:
 
     def altura(self):
         print("La altura del rectángulo entre {} y {} es {}". format(self.pi, self.pf, abs(self.pf.y - self.pi.y)))
-        
+
+    def area(self):
+        print("El area del rectángulo es: {}".format(self.base * self.altura))
 
 #experimentación
 A=Punto(2, 3)
 B=Punto(5, 5) 
 C=Punto(-3, -1)
 D=Punto(0, 0)
+E=Rectangulo(A,B)
 
 
 print("/n Mostrando información: ")
@@ -79,3 +83,8 @@ B.vector(A)
 
 A.distancia(B)
 B.distancia(A)
+
+E= Rectangulo(A,B)
+E.base()
+E.altura()
+E.area()

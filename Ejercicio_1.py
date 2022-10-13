@@ -57,7 +57,7 @@ class Rectangulo:
         print("La altura del rectángulo entre {} y {} es {}". format(self.pi, self.pf, abs(self.pf.y - self.pi.y)))
 
     def area(self):
-        print("El area del rectángulo es: {}".format(self.base * self.altura))
+        print("El area del rectángulo es: {}".format(self.base*self.altura))
 
 #experimentación
 A=Punto(2, 3)
@@ -84,7 +84,7 @@ B.vector(A)
 A.distancia(B)
 B.distancia(A)
 
-E= Rectangulo(A,B)
+E=Rectangulo(A,B)
 E.base()
 E.altura()
 E.area()

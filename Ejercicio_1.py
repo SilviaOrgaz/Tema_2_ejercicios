@@ -15,9 +15,10 @@ class Punto:
         self.y=y
         print("Coordenadas creadas con éxito")
 
+    def __str__(self):
+        return "({},{})".format(self.x, self.y)
+
     
-
-
 
 
 

@@ -18,7 +18,13 @@ class Punto:
     def __str__(self):
         return "({},{})".format(self.x, self.y)
 
-    
+    def cuadrante(self):
+        if self.x == 0 and self.y != 0:
+            return self.y
+        elif self.x != 0 and self.y == 0:
+            return self.x
+        else:
+            return 0
 
 
 

@@ -26,8 +26,9 @@ class Lista_numeros:
                 x.append(i)
         return x
     
-        #print(f"Borrar elementos duplicados: {x}")
-        #x.sort()
+    def ordenar(self, x):
+        x.sort()
+        return x
         #print(f"Ordenar la lista de menor a mayor: {x}")
         #for i in x:
             #if i%2 != 0:
@@ -43,5 +44,6 @@ Lista = [10, 2, 2, 4, 7, 1, 4]
 x=[]
 Lista_final = Lista_numeros(Lista)
 print(Lista_final.modificar(x))
+print(Lista_final.eliminar(x))
     
     

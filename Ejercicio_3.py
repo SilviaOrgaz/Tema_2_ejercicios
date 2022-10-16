@@ -16,25 +16,28 @@
 #Recordatorio
 #La función sum(lista) devuelve una suma de los elementos de una lista.
 
-Lista = [10, 2, 2, 4, 7, 1, 4]
+class Lista:
+    def __init__(self, lista):
+        self.lista = lista
 
-x =[]
-def modificar(lista, x):
-    for i in lista:
-        if i not in x:
-            x.append(i)
-    print(f"Borrar elementos duplicados: {x}")
-    x.sort()
-    print(f"Ordenar la lista de menor a mayor: {x}")
-    for i in x:
-        if i%2 != 0:
-            x.remove(i)
-    print(f"Eliminar los números impares: {x}")
-    print("Realizar la suma de los elementos que quedan: ", sum(x))
-    x.append(sum(x))
-    x= x[-1:]+ x[:-1]
-    print(f"Añadir como primer elemento de la lista la suma realizada: {x}")
-    return x
+    x =[]
+    def modificar(lista, x):
+        for i in lista:
+            if i not in x:
+                x.append(i)
+        print(f"Borrar elementos duplicados: {x}")
+        x.sort()
+        print(f"Ordenar la lista de menor a mayor: {x}")
+        for i in x:
+            if i%2 != 0:
+                x.remove(i)
+        print(f"Eliminar los números impares: {x}")
+        print("Realizar la suma de los elementos que quedan: ", sum(x))
+        x.append(sum(x))
+        x= x[-1:]+ x[:-1]
+        print(f"Añadir como primer elemento de la lista la suma realizada: {x}")
+        return x
 
-solucion = modificar(Lista, x)
-print(solucion[0] == sum(solucion[1:]))
+    Lista = [10, 2, 2, 4, 7, 1, 4]
+    solucion = modificar(Lista, x)
+    print(solucion[0] == sum(solucion[1:]))

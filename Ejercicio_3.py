@@ -40,8 +40,9 @@ class Lista_numeros:
                 Lista_final.remove(i)
         return Lista_final
                 
-        #print(f"Eliminar los números impares: {x}")
-        #print("Realizar la suma de los elementos que quedan: ", sum(x))
+    def sumar(self):
+        return sum(self.eliminar())
+        
         #x.append(sum(x))
         #x= x[-1:]+ x[:-1]
         #print(f"Añadir como primer elemento de la lista la suma realizada: {x}")
@@ -53,5 +54,5 @@ Lista_final = Lista_numeros(x)
 print(Lista_final.modificar(Lista))
 print(Lista_final.ordenar())
 print(Lista_final.eliminar())
-    
+print(Lista_final.sumar())
     

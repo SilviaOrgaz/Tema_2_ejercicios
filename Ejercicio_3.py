@@ -17,18 +17,20 @@
 #La función sum(lista) devuelve una suma de los elementos de una lista.
 
 class Lista_numeros:
-    def __init__(self, lista):
-        self.lista = lista
+    def __init__(self, x):
+        self.x= x
 
-    def modificar(self, x):
-        for i in self.lista:
-            if i not in x:
-                x.append(i)
-        return x
+    def modificar(self, lista):
+        Lista_final = self.x
+        for i in lista:
+            if i not in Lista_final:
+                Lista_final.append(i)
+        return Lista_final
     
-    def ordenar(self, x):
-        x.sort()
-        return x
+    def ordenar(self):
+        Lista_final=self.x
+        Lista_final.sort()
+        return Lista_final
         #print(f"Ordenar la lista de menor a mayor: {x}")
         #for i in x:
             #if i%2 != 0:
@@ -42,8 +44,8 @@ class Lista_numeros:
 
 Lista = [10, 2, 2, 4, 7, 1, 4]
 x=[]
-Lista_final = Lista_numeros(Lista)
-print(Lista_final.modificar(x))
-print(Lista_final.eliminar(x))
+Lista_final = Lista_numeros(x)
+print(Lista_final.modificar(Lista))
+print(Lista_final.ordenar())
     
     

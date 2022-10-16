@@ -45,7 +45,7 @@ class Lista_numeros:
         
     def añadir(self):
         Lista_final = self.x
-        Lista_final.append(sum(x))
+        Lista_final.append(self.sumar())
         Lista_final= Lista_final[-1:]+ Lista_final[:-1]
         return Lista_final
 
@@ -58,3 +58,5 @@ print(Lista_final.eliminar())
 print(Lista_final.sumar())
 print(Lista_final.añadir())
 
+nueva_lista = Lista_final.añadir()
+print(nueva_lista[0]==sum(nueva_lista[1:]))

@@ -21,7 +21,6 @@ class Lista_numeros:
         self.x= x
 
     def modificar(self, lista):
-        #Lista_final = self.x
         for i in lista:
             if i not in self.x:
                 self.x.append(i)
@@ -29,17 +28,15 @@ class Lista_numeros:
         
     
     def ordenar(self):
-        Lista_final=self.x
-        Lista_final.sort()
-        return Lista_final
+        self.x.sort()
+        print(self.x)
 
     
-    def eliminar(self):
-        Lista_final=self.x
-        for i in Lista_final:
+    def eliminar_impares(self):
+        for i in self.x:
             if i%2 != 0:
-                Lista_final.remove(i)
-        return Lista_final
+                self.x.remove(i)
+        print(self.x)
                 
     def sumar(self):
         return sum(self.eliminar())
@@ -54,7 +51,7 @@ Lista = [10, 2, 2, 4, 7, 1, 4]
 #x=[]
 Lista_final = Lista_numeros([])
 Lista_final.modificar(Lista)
-print(Lista_final.ordenar())
+Lista_final.ordenar()
 print(Lista_final.eliminar())
 print(Lista_final.sumar())
 print(Lista_final.añadir())

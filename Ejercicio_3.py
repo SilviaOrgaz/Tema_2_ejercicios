@@ -31,10 +31,15 @@ class Lista_numeros:
         Lista_final=self.x
         Lista_final.sort()
         return Lista_final
-        #print(f"Ordenar la lista de menor a mayor: {x}")
-        #for i in x:
-            #if i%2 != 0:
-                #x.remove(i)
+
+    
+    def eliminar(self):
+        Lista_final=self.x
+        for i in Lista_final:
+            if i%2 != 0:
+                Lista_final.remove(i)
+        return Lista_final
+                
         #print(f"Eliminar los números impares: {x}")
         #print("Realizar la suma de los elementos que quedan: ", sum(x))
         #x.append(sum(x))
@@ -47,5 +52,6 @@ x=[]
 Lista_final = Lista_numeros(x)
 print(Lista_final.modificar(Lista))
 print(Lista_final.ordenar())
+print(Lista_final.eliminar())
     
     

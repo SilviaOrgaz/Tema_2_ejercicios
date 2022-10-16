@@ -50,14 +50,18 @@ class Rectangulo:
         self.pf = pf
         
     def base(self):
-        print("La base del rectángulo entre {}  y {} es {}: ".format(self.pi, self.pf, abs(self.pf.x - self.pi.x)))
+        self.base=abs(self.pf.x - self.pi.x)
+        print("La base del rectángulo entre {}  y {} es: {} ".format(self.pi, self.pf, self.base))
 
     def altura(self):
-        print("La altura del rectángulo entre {} y {} es {}". format(self.pi, self.pf, abs(self.pf.y - self.pi.y)))
+        self.altura = abs(self.pf.y - self.pi.y)
+        print("La altura del rectángulo entre {} y {} es {}". format(self.pi, self.pf, self.altura))
 
     def area(self):
-        self.base = abs(self.pf.x - self.pi.x)
-        self.altura = abs(self.pf.y - self.pi.y)
+        #self.base = abs(self.pf.x - self.pi.x)
+        #self.base()
+        #self.altura()
+        #self.altura = abs(self.pf.y - self.pi.y)
         self.area = self.base * self.altura
         print("El area del rectángulo de los puntos {} y {} es: {}".format(self.pi, self.pf, self.area))
 

@@ -43,10 +43,11 @@ class Lista_numeros:
     def sumar(self):
         return sum(self.eliminar())
         
-        #x.append(sum(x))
-        #x= x[-1:]+ x[:-1]
-        #print(f"Añadir como primer elemento de la lista la suma realizada: {x}")
-        #return x
+    def añadir(self):
+        Lista_final = self.x
+        Lista_final.append(sum(x))
+        Lista_final= Lista_final[-1:]+ Lista_final[:-1]
+        return Lista_final
 
 Lista = [10, 2, 2, 4, 7, 1, 4]
 x=[]
@@ -55,4 +56,5 @@ print(Lista_final.modificar(Lista))
 print(Lista_final.ordenar())
 print(Lista_final.eliminar())
 print(Lista_final.sumar())
-    
+print(Lista_final.añadir())
+

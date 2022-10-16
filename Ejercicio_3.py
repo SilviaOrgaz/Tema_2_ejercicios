@@ -39,7 +39,8 @@ class Lista_numeros:
         print(self.x)
                 
     def sumar(self):
-        return sum(self.eliminar())
+        print(sum(self.x))
+            
         
     def añadir(self):
         Lista_final = self.x
@@ -52,9 +53,9 @@ Lista = [10, 2, 2, 4, 7, 1, 4]
 Lista_final = Lista_numeros([])
 Lista_final.modificar(Lista)
 Lista_final.ordenar()
-print(Lista_final.eliminar())
-print(Lista_final.sumar())
-print(Lista_final.añadir())
+Lista_final.eliminar_impares()
+Lista_final.sumar()
+Lista_final.añadir()
 
 nueva_lista = Lista_final.añadir()
 print(nueva_lista[0]==sum(nueva_lista[1:]))
